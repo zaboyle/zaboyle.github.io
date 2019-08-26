@@ -49,6 +49,16 @@ img {
 	margin-bottom: 2em;
 }
 
+#about {
+	transition: 2s;
+	opacity: 0;
+}
+
+.highlighter-rouge {
+	transition: 2s;
+	opacity: 0;
+}
+
 // title
 section #title h1 {
 	font-size: 3em;

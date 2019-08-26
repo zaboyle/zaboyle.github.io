@@ -22,6 +22,12 @@ function typeAll() {
 	setTimeout(() => { typeWord('developer', slow, speed_up); }, 7500);
 	setTimeout(() => { deleteWord(med); }, 8500);
 	setTimeout(() => { typeWord('computer scientist', slow); }, 10500);
+	setTimeout(() => { showContent(); }, 14000);
+}
+
+function showContent() {
+	$('#about').css('opacity', '1');
+	$('.highlighter-rouge').css('opacity', '1');
 }
 
 typeAll();
