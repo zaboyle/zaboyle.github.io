@@ -44,7 +44,14 @@ img {
 	padding: 1em 2em 0 2em;
 }
 
+#typing-container {
+	height: 3em;
+	margin-bottom: 2em;
+}
+
 // title
 section #title h1 {
 	font-size: 3em;
+	font-weight: 500;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

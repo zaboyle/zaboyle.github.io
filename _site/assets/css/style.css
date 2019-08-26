@@ -287,4 +287,6 @@ img { height: 30px; width: 30px; margin: 1em; }
 
 #button-container { margin: 0.5em 1em 0 1em; padding: 1em 2em 0 2em; }
 
-section #title h1 { font-size: 3em; }
+#typing-container { height: 3em; margin-bottom: 2em; }
+
+section #title h1 { font-size: 3em; font-weight: 500; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
