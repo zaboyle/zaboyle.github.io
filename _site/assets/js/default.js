@@ -13,15 +13,15 @@ function deleteWord(speed, speed_mult = 1, i = document.getElementById('typing')
 }
 
 function typeAll() {
-	let slow = 200, med = 150, fast = 100;
-	let speed_up = 1.5, slow_down = 0.8;
+	let slow = 200, med = 150, fast = 100, very_fast = 50;
+	let speed_up = 1.5, slow_down = 0.9;
 	setTimeout(() => { typeWord('student', med, slow_down); }, 1000);
 	setTimeout(() => { deleteWord(slow, speed_up); }, 3600);
 	setTimeout(() => { typeWord('engineer', fast); }, 4500);
 	setTimeout(() => { deleteWord(med); }, 6000);
 	setTimeout(() => { typeWord('developer', slow, speed_up); }, 7500);
-	setTimeout(() => { deleteWord(med); }, 8500);
-	setTimeout(() => { typeWord('computer scientist', slow); }, 10500);
+	setTimeout(() => { deleteWord(med); }, 9000);
+	setTimeout(() => { typeWord('computer scientist', very_fast, slow_down); }, 11500);
 	setTimeout(() => { showContent(); }, 14000);
 }
 
