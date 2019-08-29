@@ -12,6 +12,11 @@ function deleteWord(speed, speed_mult = 1, i = document.getElementById('typing')
 	}
 }
 
+function showContent() {
+	$('#about').css('opacity', '1');
+	$('.highlighter-rouge').css('opacity', '1');
+}
+
 function typeAll() {
 	let slow = 200, med = 150, fast = 100, very_fast = 50;
 	let speed_up = 1.5, slow_down = 0.9;
@@ -23,11 +28,6 @@ function typeAll() {
 	setTimeout(() => { deleteWord(med, speed_up); }, 9500);
 	setTimeout(() => { typeWord('computer scientist', very_fast, slow_down); }, 11000);
 	setTimeout(() => { showContent(); }, 13500);
-}
-
-function showContent() {
-	$('#about').css('opacity', '1');
-	$('.highlighter-rouge').css('opacity', '1');
 }
 
 typeAll();
