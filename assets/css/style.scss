@@ -44,7 +44,47 @@ img {
 	padding: 1em 2em 0 2em;
 }
 
-// title
+#typing-container {
+	height: 3em;
+	margin-bottom: 2em;
+}
+
+#typing {
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	font-size: 2em;
+	letter-spacing: 0.25em;
+	display: inline-block;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid rgb(67, 154, 253); /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation:
+    	blink-caret .7s step-end infinite;
+}
+
+// example from https://css-tricks.com/snippets/css/typewriter-effect/
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgb(67, 154, 253); }
+}
+
+.highlighter-rouge {
+	transition: 2s;
+	opacity: 0;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
 section #title h1 {
 	font-size: 3em;
+	font-weight: 500;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

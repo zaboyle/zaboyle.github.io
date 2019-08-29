@@ -26,7 +26,13 @@
           <h1>Zachary Boyle</h1>
         </div>
 
-        {{ content }}
+        <div id="typing-container">
+          <p id="typing"></p>
+        </div>
+
+        <div id="content">
+          {{ content }}
+        </div>
 
       </section>
 
@@ -42,6 +48,9 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+
+    <!-- custom JS -->
+    <script src="/assets/js/default.js"></script>
 
   </body>
 </html>
